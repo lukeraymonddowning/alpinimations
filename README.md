@@ -93,7 +93,7 @@ Note that Tailwind UI includes the animations we should apply. These animations 
     <div x-show="showSlideover" @anim('tailwindui.slideover.overlay') class="absolute inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
 
     <section class="absolute inset-y-0 right-0 pl-10 max-w-full flex">
-      <div x-show="showSlideover" @anim('tailwindui.slideover.overlay') class="w-screen max-w-md">
+      <div x-show="showSlideover" @anim('tailwindui.slideover.panel') class="w-screen max-w-md">
         <div class="h-full flex flex-col space-y-6 py-6 bg-white shadow-xl overflow-y-scroll">
           <header class="px-4 sm:px-6">
             <div class="flex items-start justify-between space-x-3">
@@ -127,7 +127,7 @@ We can go even further here. As most animations are coupled with `x-show`, Alpin
     <div @xshow('showSlideover', 'tailwindui.slideover.overlay') class="absolute inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
 
     <section class="absolute inset-y-0 right-0 pl-10 max-w-full flex">
-      <div @xshow('showSlideover', 'tailwindui.slideover.overlay') class="w-screen max-w-md">
+      <div @xshow('showSlideover', 'tailwindui.slideover.panel') class="w-screen max-w-md">
         <div class="h-full flex flex-col space-y-6 py-6 bg-white shadow-xl overflow-y-scroll">
           <header class="px-4 sm:px-6">
             <div class="flex items-start justify-between space-x-3">
