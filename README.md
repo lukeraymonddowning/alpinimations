@@ -6,7 +6,6 @@ Clean up your Alpine JS animations.
 - [About Alpinimations](#about-alpinimations)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Usage](#usage)
 - [Available animations](#available-animations)
     * [Tailwind UI](#tailwind-ui)
         * [Dropdowns](#dropdowns)
