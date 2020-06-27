@@ -2,6 +2,23 @@
 
 Clean up your Alpine JS animations.
 
+# Table of Contents
+- [About Alpinimations](#about-alpinimations)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Usage](#usage)
+- [Available animations](#available-animations)
+    * [Tailwind UI](#tailwind-ui)
+        * [Dropdowns](#dropdowns)
+        * [Menus](#menus)
+        * [Modals](#modals)
+        * [Notifications](#notifications)
+        * [Slideovers](#slideovers)
+- [Contributing](#contributing)
+- [Code of conduct](#code-of-conduct)
+- [Security vulnerabilities](#security-vulnerabilities)
+- [License](#license)
+
 ## About Alpinimations
 
 Alpinimations helps you clean up your Laravel blade files when using Alpine JS. Alpine has a super powerful animation system, but it can often bloat your HTML. This package bundles common animations into
@@ -10,8 +27,10 @@ small blade files that you can include in your HTML.
 We currently support all Tailwind UI animations and will be adding animations from more places over time.
 
 ## Installation
-To install the package, simply run `composer require lukeraymonddowning/alpinimations` in the terminal from the root of your Laravel project. If you'd like to edit the animation files,
-you can publish the views by running 
+
+To install the package, simply run `composer require lukeraymonddowning/alpinimations` in the terminal from the root of your Laravel project. 
+
+If you'd like to edit the animation files, you can publish the views by running `php artisan vendor:publish --provider=Lukeraymonddowning\Alpinimations\AlpinationServiceProvider`.
 
 ## Usage
 
@@ -100,7 +119,7 @@ Note that Tailwind UI includes the animations we should apply. These animations 
   </div>
 </div>
 ```
-Note how we can use the `@amin` blade directive to include all the necessary alpine animation directives. A list of all Tailwind UI animations available can be found below.
+Note how we can use the `@anim` blade directive to include all the necessary alpine animation directives. A list of all Tailwind UI animations available can be found below.
 
 We can go even further here. As most animations are coupled with `x-show`, Alpinimations includes an `@xshow` blade directive. Check it out:
 
