@@ -15,7 +15,6 @@ Clean up your Alpine JS animations.
         * [Slideovers](#slideovers)
 - [Contributing](#contributing)
 - [Code of conduct](#code-of-conduct)
-- [Security vulnerabilities](#security-vulnerabilities)
 - [License](#license)
 
 ## About Alpinimations
@@ -186,10 +185,6 @@ Thank you for considering contributing to the Laravel framework! The contributio
 ## Code of Conduct
 
 In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
 ## License
 
