@@ -1,0 +1,50 @@
+{
+    "name": "lukeraymonddowning/alpinimations",
+    "description": "Streamline your animations by using these simple blade includes in your components!",
+    "keywords": [
+        "lukeraymonddowning",
+        "alpinimations"
+    ],
+    "homepage": "https://github.com/lukeraymonddowning/alpinimations",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Luke Downing",
+            "email": "lukeraymonddowning@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "^7.17"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lukeraymonddowning\\Alpinimations\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Lukeraymonddowning\\Alpinimations\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lukeraymonddowning\\Alpinimations\\AlpinimationsServiceProvider"
+            ]
+        }
+    }
+}
