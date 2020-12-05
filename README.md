@@ -19,16 +19,19 @@ Clean up your Alpine JS animations.
 
 ## About Alpinimations
 
-Alpinimations helps you clean up your Laravel blade files when using Alpine JS. Alpine has a super powerful animation system, but it can often bloat your HTML. This package bundles common animations into
+Alpinimations helps you clean up your Laravel blade files when using Alpine JS. Alpine has a super powerful animation 
+system, but it can often bloat your HTML. This package bundles common animations into
 small blade files that you can include in your HTML.
 
 We currently support all Tailwind UI animations and will be adding animations from more places over time.
 
 ## Installation
 
-To install the package, simply run `composer require lukeraymonddowning/alpinimations` in the terminal from the root of your Laravel project. 
+To install the package, simply run `composer require lukeraymonddowning/alpinimations` in the terminal from the root of 
+your Laravel project. 
 
-If you'd like to edit the animation files, you can publish the views by running `php artisan vendor:publish --provider=Lukeraymonddowning\Alpinimations\AlpinationServiceProvider`.
+If you'd like to edit the animation files, you can publish the views by running 
+`php artisan vendor:publish --tag=alpinimations`.
 
 ## Usage
 

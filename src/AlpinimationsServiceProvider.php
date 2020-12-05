@@ -9,30 +9,32 @@ class AlpinimationsServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'alpinimation');
-
         if ($this->app->runningInConsole()) {
-            $this->publishes(
-                [
-                    __DIR__ . '/../resources/views' => resource_path('views/vendor/alpinimations'),
-                ],
-                'views'
-            );
+            $this->console();
         }
 
-        Blade::directive(
-            'anim',
-            function ($expression) {
-                return $this->renderAlpinimation($expression);
-            }
-        );
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'alpinimation');
+
+        Blade::directive('anim', fn($expression) => $this->renderAlpinimation($expression));
 
         Blade::directive(
             'xshow',
             function ($expression) {
-                $parts = explode(",", $expression);
-                return $this->renderAlpinimation(trim($parts[1]), "x-show=" . str_replace('"', "\\\"", trim($parts[0])));
+                [$show, $animation] = explode(",", $expression);
+                return $this->renderAlpinimation(
+                    trim($animation),
+                    "x-show=" . str_replace('"', "\\\"", trim($show))
+                );
             }
+        );
+    }
+
+    protected function console()
+    {
+        $this->publishes([
+                __DIR__ . '/../resources/views' => resource_path('views/vendor/alpinimations'),
+            ],
+            'alpinimations'
         );
     }
 
