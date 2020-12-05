@@ -176,6 +176,9 @@ Suuuuuper clean.
 #### Notifications
 - `tailwindui.notification.panel` - The container for the notification. [Tailwind UI docs](https://tailwindui.com/components/application-ui/overlays/notifications)
 
+#### Select Boxes
+- `tailwindui.select.popover` - The option menu popover. [Tailwind UI docs](https://tailwindui.com/components/application-ui/forms/select-menus)
+
 #### Slideovers
 - `tailwindui.slideover.close-button` - The close button for a slideover. This could apply to any close button. [Tailwind UI docs](https://tailwindui.com/components/application-ui/overlays/slide-overs)
 - `tailwindui.slideover.overlay` - The background overlay that applies to certain slideovers. [Tailwind UI docs](https://tailwindui.com/components/application-ui/overlays/slide-overs#component-3e8348c3c183bd14fceb018d4cca1942)
