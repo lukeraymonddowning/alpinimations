@@ -4,7 +4,6 @@ namespace Lukeraymonddowning\Alpinimations;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Support\Str;
 
 class AlpinimationsServiceProvider extends ServiceProvider
 {
