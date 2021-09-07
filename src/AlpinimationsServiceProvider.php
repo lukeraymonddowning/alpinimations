@@ -40,6 +40,7 @@ class AlpinimationsServiceProvider extends ServiceProvider
 
     protected function renderAlpinimation($animationName, $extra = "")
     {
+        $extra = $extra ? $extra . " " : $extra;
         return "<?php echo \"$extra\"; echo view('alpinimation::' . $animationName)->render(); ?>";
     }
 }
