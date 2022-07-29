@@ -1,5 +1,6 @@
-build
+.idea/
+build/
+docs/
+vendor/
 composer.lock
-docs
-vendor
 coverage
